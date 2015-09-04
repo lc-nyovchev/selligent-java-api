@@ -40,7 +40,7 @@ public class Example {
 	private static List<ListInfo> getUserLists(IndividualSoap instance){
 		Holder<Integer> result = new Holder<>();
 		Holder<ArrayOfListInfo> listsInfo = new Holder<>();
-		Holder<String> errorHolder =new Holder<>();
+		Holder<String> errorHolder = new Holder<>();
 		
 		instance.getLists(ALL_LISTS_ARRAY, null, result, listsInfo, errorHolder);
 		if ( StringUtils.isNotBlank(errorHolder.value) ){
